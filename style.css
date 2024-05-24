@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    background-color: #00bcd4; /* Blue */
+    color: white;
+    padding: 1em 0;
+}
+
+nav {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Main content */
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+/* Upload form */
+.upload-section {
+    background: linear-gradient(to right, #00bcd4, #ff4081); /* Blue and pink gradient */
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input, form button {
+    margin: 0.5em;
+    padding: 0.75em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input[type="file"] {
+    background-color: white;
+    color: #333;
+}
+
+form input[type="text"], form input[type="date"] {
+    flex: 1 1 100%;
+    background-color: white;
+}
+
+form button {
+    background-color: #ff4081; /* Pink */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff79b0; /* Lighter pink */
+}
+
+/* Photo album */
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo {
+    margin: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-caption {
+    padding: 0.5em;
+    text-align: center;
+    background-color: #00bcd4; /* Blue */
+    color: white;
+    font-size: 0.9em;
+}

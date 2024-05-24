@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Photo Album</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="upload-section">
+            <form id="upload-form">
+                <input type="file" id="photo-upload" accept="image/*" required>
+                <input type="text" id="caption" placeholder="Caption" required>
+                <input type="text" id="location" placeholder="Location">
+                <input type="date" id="date">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="photo-album">
+            <!-- Photo entries will go here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
